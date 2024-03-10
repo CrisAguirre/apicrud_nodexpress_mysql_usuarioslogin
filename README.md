@@ -23,3 +23,8 @@ comando para iniciar la app (raiz): npm run dev
 	"usuario": "Santy",
 	"password":"321"
 }
+
+Rutas
+http://localhost:4000/api/clientes
+http://localhost:4000/api/clientes/1
+http://localhost:4000/api/usuarios
