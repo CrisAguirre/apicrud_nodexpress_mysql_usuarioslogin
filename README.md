@@ -11,4 +11,12 @@ Para correr este proyecto se debe tener instalado el cliente de Mysql con una ba
 
 Se sube archivo "Insomnia_2024-03-09" para acceder a la colección de consultas.
 
-
+Data de pruebas:
+{
+	"usuario": "Crisdev",
+	"password":"@4321"
+}
+{
+	"usuario": "Santy",
+	"password":"321"
+}
