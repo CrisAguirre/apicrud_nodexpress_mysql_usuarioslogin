@@ -60,6 +60,13 @@ function eliminar(tabla, data){
         })
     });
 }
+function query(tabla, consulta){
+    return new Promise((resolve, reject)=>{
+        conexion.query(`SELECT * FROM ${tabla} WHERE ?`, consulta, (error, result)=>{
+            return error ? reject(error) : resolve(result[0]);
+        })
+    });
+}
 function agregar(tabla, data){
     return new Promise((resolve, reject)=>{
         conexion.query(`INSERT INTO ${tabla} SET ? ON DUPLICATE KEY UPDATE ?`, [data,data], (error, result)=>{
@@ -87,4 +94,5 @@ module.exports = {
     uno, 
     agregar, 
     eliminar,
+    query,
 }
