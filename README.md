@@ -11,7 +11,10 @@ Para correr este proyecto se debe tener instalado el cliente de Mysql con una ba
 
 Se sube archivo "Insomnia_2024-03-09" para acceder a la colección de consultas.
 
-Data de pruebas:
+Data de pruebas: comandonpm run dev
+
+comando para iniciar la app (raiz): npm run dev
+
 {
 	"usuario": "Crisdev",
 	"password":"@4321"
