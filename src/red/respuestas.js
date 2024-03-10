@@ -8,7 +8,7 @@ exports.success = function (req, res, mensaje='', status=200){
     });
 }
     
-exports.error = function (reg ,res, mensaje='Error interno.', status=500){
+exports.error = function (req ,res, mensaje='Error interno.', status=500){
 //const statusCode =-status || 500;
 //const mensajeError = mensaje || 'Error Interno';
     res.status(status) .send({ 
