@@ -9,6 +9,6 @@ Para correr este proyecto se debe tener instalado el cliente de Mysql con una ba
         database: process.env.MYSQL_DB || 'ejemplo'
     }
 
-Se sube archivo "Insomnia_2024-03-09" de insmonia para acceder a la colección de consultas.
+Se sube archivo "Insomnia_2024-03-09" para acceder a la colección de consultas.
 
 
