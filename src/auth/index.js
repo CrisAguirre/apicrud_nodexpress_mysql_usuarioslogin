@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken');
-const { error } = require('../red/respuestas');
+const { error } = require('../middleware/errors');
 const config = require('../config')
 
 const secret = config.jwt.secret;
@@ -17,18 +17,18 @@ const chequearToken = {
         const decodificado = decodificarCabecera(req);
 
        // if(decodificado.id !== id){
-       // throw new Error('No tienes privilegios para hacer esto')
+       // throw error('No tienes privilegios para hacer esto', 401)
        //}
     }
 }
 
 function obtenerToken(autorizacion){
     if(!autorizacion){
-        throw new Error('No viene token')
+        throw error('No viene token', 401)
     }
 
     if(autorizacion.indexOf('Bearer')=== -1){
-        throw new Error('Formato inválido')
+        throw error('Formato inválido', 401)
     }
 
     let token = autorizacion.replace('Bearer ', '')
