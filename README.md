@@ -1,1 +1,1 @@
-Este es un proyecto personal en el cual se aplican todos los conocimientos para crear desde 0 un crud usando express de node js y mysql, el crud se basa en el manejo de usuarios y clientes en un sistema estandar.
+Desarrollo back-end de CRUD con express-node js y mysql, sistema básico de usuarios.
